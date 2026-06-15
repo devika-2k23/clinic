@@ -292,3 +292,14 @@ sections.forEach(sec => sectionObserver.observe(sec));
 
   revealUpEls.forEach(function(el) { revealUpObserver.observe(el); });
 })();
+
+/* ---- Mobile nav close button ---- */
+const closeMenuBtn = document.getElementById('closeMobileMenu');
+if (closeMenuBtn && drawer) {
+  closeMenuBtn.addEventListener('click', () => {
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.classList.remove('open');
+  });
+}
