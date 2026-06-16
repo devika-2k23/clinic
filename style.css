@@ -1,4 +1,4 @@
-/* ===== IMPORTS ===== */
+﻿/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
 /* ===== RESET & BASE ===== */
@@ -534,26 +534,28 @@ select:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--text-dark);
-  color: #000000;
-  font-size: clamp(0.8rem, 1vw, 0.88rem);
-  font-weight: 500;
-  padding: 8px 24px;
+  background: #3D7A4A;
+  color: #FFFFFF;
+  font-size: clamp(0.75rem, 0.9vw, 0.82rem);
+  font-weight: 600;
+  padding: 6px 18px;
   border-radius: 50px;
   transition: var(--transition);
   white-space: nowrap;
   flex-shrink: 0;
   text-decoration: none;
   line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(61, 122, 74, 0.2);
 }
 
 .nav-go-pro:hover {
-  background: var(--green-mid);
-  color: #000000;
+  background: #2D5F3A;
+  color: #FFFFFF;
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(61, 122, 74, 0.3);
 }
 
-/* Hamburger â€” hidden on desktop */
+/* Hamburger â€" hidden on desktop */
 .nav-hamburger {
   display: none;
   flex-direction: column;
@@ -652,17 +654,18 @@ select:focus-visible {
 
 .mobile-drawer a.nav-go-pro {
   font-size: 14px;
-  background: var(--text-dark);
-  color: var(--white);
+  background: #3D7A4A;
+  color: #FFFFFF;
   padding: 12px 32px;
   border-radius: 50px;
   margin-top: 8px;
   width: auto;
+  font-weight: 600;
 }
 
 .mobile-drawer a.nav-go-pro:hover {
-  background: var(--green-mid);
-  color: var(--white);
+  background: #2D5F3A;
+  color: #FFFFFF;
 }
 
 .nav-hamburger.open span:nth-child(1) {
@@ -873,7 +876,7 @@ select:focus-visible {
   font-weight: 600;
   padding: 14px 36px;
   border: 2px solid #3D7A4A;
-  border-radius: 50px;
+  border-radius: 999px;
   transition: var(--transition);
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -3405,7 +3408,7 @@ body {
 
 /* ===== EXPERTISE BG BLOCK (inside doctor section) ===== */
 .expertise-bg-block {
-  padding: 50px 0 80px;
+  padding: 50px 0 40px;
 }
 
 /* ===== AREA OF EXPERTISE (merged from section1) ===== */
@@ -5705,7 +5708,7 @@ footer .footer-social a:hover {
 }
 
 /* Phase 3 & 4: Component Consistency & Spacing */
-.btn, .hero-btn, .nav-go-pro, .submit-btn {
+.btn, .submit-btn {
   height: 56px !important;
   border-radius: 14px !important;
   display: inline-flex !important;
@@ -5714,6 +5717,32 @@ footer .footer-social a:hover {
   padding: 0 32px !important;
   font-weight: 600 !important;
   transition: all 0.3s ease !important;
+}
+
+.hero-btn {
+  border-radius: 999px !important;
+  height: auto !important;
+  padding: 14px 36px !important;
+  min-height: 48px !important;
+}
+
+.nav-go-pro {
+  background: #3D7A4A !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  font-size: clamp(0.75rem, 0.9vw, 0.82rem) !important;
+  border-radius: 50px !important;
+  padding: 6px 18px !important;
+  height: auto !important;
+  box-shadow: 0 2px 8px rgba(61, 122, 74, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.nav-go-pro:hover {
+  background: #2D5F3A !important;
+  color: #FFFFFF !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(61, 122, 74, 0.3) !important;
 }
 
 .spec-card, .why-card, .testimonial-card, .contact-card {
